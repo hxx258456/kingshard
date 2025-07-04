@@ -21,7 +21,7 @@ web_password : admin
 
 # if set log_path, the sql log will write into log_path/sql.log,the system log
 # will write into log_path/sys.log
-#log_path : ../../etc
+log_path : /etc/kingshard
 
 # log level[debug|info|warn|error],default error
 log_level : debug
