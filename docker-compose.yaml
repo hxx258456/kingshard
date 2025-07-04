@@ -1,0 +1,14 @@
+version: "3.7"
+
+
+services:
+  kingshard:
+    image: kingshard:latest
+    container_name: kingshard
+    volumes:
+      - ./etc:/etc/kingshard
+    ports:
+      - "9696:9696"
+      - "7080:7080"
+      - "9797:9797"
+    restart: always
