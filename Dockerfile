@@ -1,5 +1,5 @@
 # Use the latest openEuler base image
-FROM openeuler/openeuler:latest
+FROM leechm/kylin:v10-20220505-loongarch64
 
 # Copy the kingshard binary to /usr/local/bin
 COPY ./bin/kingshard /usr/local/bin/kingshard
