@@ -1,11 +1,6 @@
 # Use the latest openEuler base image
 FROM openeuler/openeuler:latest
 
-# Install dependencies (if required, adjust based on kingshard's needs)
-RUN yum update -y && \
-    yum install -y shadow-utils && \
-    yum clean all
-
 # Copy the kingshard binary to /usr/local/bin
 COPY ./bin/kingshard /usr/local/bin/kingshard
 
